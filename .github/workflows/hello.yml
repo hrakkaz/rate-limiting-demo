@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, world!"
+
+      - name: Date et heure
+        run: date 
