@@ -1,13 +1,13 @@
 name: Hello World
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  greet:
+  say_hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Dire bonjour
-        run: echo "Hello, GitHub Actions!"
-      
-      - name: Date et heure
-        run: date
+      - name: Say Hello
+        run: echo "Hello, world!"
